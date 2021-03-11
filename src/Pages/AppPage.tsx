@@ -2,18 +2,22 @@ import AppContainer from '../Components/Global/AppContainer'
 import GlobalProfileNavigator from '../Components/Global/GlobalProfileNavigator'
 import HeaderBar from '../Components/Global/HeaderBar'
 import PhotoFeed from '../Components/Global/PhotoFeed'
-import {Container} from '../Components/Global/AppContainer/styles'
+import { Container } from '../Components/Global/AppContainer/styles'
+import GlobalNavbar from '../Components/Global/GlobalNavbar'
 
-export default function AppPage(){
+export default function AppPage() {
     return (
-        <AppContainer>
-            <Container>
-                <GlobalProfileNavigator />
-            </Container>
-            <Container>
-                <HeaderBar />
-                <PhotoFeed />
-            </Container>
-        </AppContainer>
+        <>
+            <AppContainer>
+                <GlobalNavbar />
+                <Container>
+                    <GlobalProfileNavigator />
+                </Container>
+                <Container>
+                    <HeaderBar />
+                    <PhotoFeed />
+                </Container>
+            </AppContainer>
+        </>
     )
 }
