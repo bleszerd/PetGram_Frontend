@@ -14,10 +14,10 @@ export const Wrapper = styled.aside<IGlobalNavbarWrapper>`
     z-index: 5;
     transition: opacity .4s, visibility .4s ease-in-out;
     visibility: ${({ opened }) => opened ? 'visible' : 'hidden'};
+    overflow: hidden;
 
     div{
         transition: transform .4s ease-in-out;
         transform: ${({ opened }) => opened ? 'translateX(0%)' : 'translateX(20%)'};
-        overflow: hidden;
     }
 `

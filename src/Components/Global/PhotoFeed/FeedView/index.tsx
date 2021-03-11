@@ -1,20 +1,16 @@
+import { IFeedCard, IFeedViewProps } from "../../../../Typescript/components";
 import FeedCard from "../FeedCard";
 import { FeedGallery, Wrapper } from "./styles";
 
-export default function FeedView() {
+export default function FeedView({ data }: IFeedViewProps) {
   return (
     <Wrapper>
       <FeedGallery>
-      <FeedCard />
-        <FeedCard />
-        <FeedCard />
-        <FeedCard />        <FeedCard />
-        <FeedCard />
-        <FeedCard />
-        <FeedCard />        <FeedCard />
-        <FeedCard />
-        <FeedCard />
-        <FeedCard />
+        {data.map(card => {
+          return (
+            <FeedCard card={card} key={card._id}/>
+          )
+        })}
       </FeedGallery>
     </Wrapper>
   );
