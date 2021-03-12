@@ -18,7 +18,8 @@ interface IFeedCard {
     profile: string
     tags: [string]
     text: string
-    _id: string
+    _id?: string
+    id: string
 }
 
 interface FeedCardProps {

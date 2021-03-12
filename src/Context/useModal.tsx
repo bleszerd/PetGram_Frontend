@@ -5,17 +5,24 @@ const ModalContext = createContext<IModalContext>({} as IModalContext)
 
 export function ModalContextProvider({ children }: IModalContextProviderProps) {
     const [opened, setOpened] = useState(false)
+    const [id, setId] = useState('')
 
     function toggleModal(){
         setOpened(!opened)
+    }
+
+    function handleId(id: string){
+        setId(id)
     }
 
     return (
         <ModalContext.Provider
             value={{
                 opened,
+                id,
                 modalController: {
-                    toggleModal
+                    toggleModal,
+                    handleId
                 }
             }}
         >
@@ -26,7 +33,7 @@ export function ModalContextProvider({ children }: IModalContextProviderProps) {
 
 export function useModal(){
     const context = useContext(ModalContext)
-    const {opened, modalController} = context
+    const {opened, id, modalController} = context
     
-    return {opened, modalController}
+    return {opened, id, modalController}
 }

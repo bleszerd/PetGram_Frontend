@@ -4,7 +4,6 @@ import { requests } from '../../../Services/Requests'
 import { useEffect, useState } from "react";
 import { IFeedCard } from "../../../Typescript/components";
 import CardModal from "./CardModal";
-import { useModal } from "../../../Context/useModal";
 
 export default function PhotoFeed() {
   const [data, setData] = useState([] as IFeedCard[])

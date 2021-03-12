@@ -5,6 +5,12 @@ const requests = {
         const response = await API.get(`/timeline/${username}`)
 
         return response.data
+    },
+
+    async getPostById({id}: IGetPostByIdParams){
+        const response = await API.get(`/posts/${id}`)
+
+        return response.data
     }
 }
 

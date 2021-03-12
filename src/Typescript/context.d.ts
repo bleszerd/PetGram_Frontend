@@ -13,8 +13,10 @@ interface INavbarContextProviderProps {
 
 interface IModalContext {
     opened: boolean
+    id: string
     modalController: {
         toggleModal: () => void
+        handleId: (id: string) => void
     }
 }
 
