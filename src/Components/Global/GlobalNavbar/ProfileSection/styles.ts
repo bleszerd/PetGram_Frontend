@@ -10,7 +10,7 @@ export const ProfilePicture = styled.div`
     width: 5rem;
     height: 5rem;
     border-radius: 1rem;
-    background: ${({ theme }) => theme.colors.three}
+    background: ${({ theme }) => theme.colors.three};
 `
 export const NameUsernameContainer = styled.div`
     margin: 0 0 0 1rem;

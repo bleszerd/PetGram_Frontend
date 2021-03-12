@@ -8,7 +8,7 @@ export default function FeedView({ data }: IFeedViewProps) {
       <FeedGallery>
         {data.map(card => {
           return (
-            <FeedCard card={card} key={card._id}/>
+            <FeedCard card={card} key={card._id} />
           )
         })}
       </FeedGallery>

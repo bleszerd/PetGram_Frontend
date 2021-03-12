@@ -1,11 +1,12 @@
+import { useModal } from '../../../../Context/useModal'
 import { FeedCardProps } from '../../../../Typescript/components'
 import {Wrapper, Image} from './styles'
 
 export default function FeedCard({card}: FeedCardProps){
-    console.log(card);
+    const { opened, modalController } = useModal()
     
     return (
-        <Wrapper>
+        <Wrapper onClick={modalController.toggleModal}>
             <Image src={card.photo}/>
         </Wrapper>
     )
