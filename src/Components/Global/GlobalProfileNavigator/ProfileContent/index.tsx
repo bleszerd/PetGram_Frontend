@@ -1,14 +1,4 @@
-import {
-  Name,
-  Username,
-  ProfilePicture,
-  Wrapper,
-  FollowersSection,
-  FollowersWrapper,
-  Count,
-  Label,
-  Splitter,
-} from "./styles";
+import { Name, Username, ProfilePicture, Wrapper, FollowersSection, FollowersWrapper, Count, Label, Splitter, } from "./styles";
 
 export default function ProfileContent() {
   return (
