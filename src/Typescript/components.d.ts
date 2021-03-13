@@ -32,3 +32,20 @@ interface ICommentCardProps {
         _id: string
     }
 }
+
+
+
+
+
+interface IGlobalProfileNavigatorProps {
+    userData: IUserData
+}
+
+interface IProfileContentProps {
+    userData: IUserProfile
+    followersData: IUserFollowers
+}
+
+interface IPhotoFeedProps {
+    timelineData: IUserTimeline[]
+}

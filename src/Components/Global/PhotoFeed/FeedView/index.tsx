@@ -1,12 +1,24 @@
-import { IFeedCard, IFeedViewProps } from "../../../../Typescript/components";
+import { IFeedCard, IFeedViewProps, IPhotoFeedProps } from "../../../../Typescript/components";
 import FeedCard from "../FeedCard";
 import { FeedGallery, Wrapper } from "./styles";
 
-export default function FeedView() {
+export default function FeedView({ timelineData }: IPhotoFeedProps) {
+  console.log(timelineData)
+
   return (
     <Wrapper>
       <FeedGallery>
-        <FeedCard />
+        {
+          timelineData ?
+
+            timelineData.map(card => {
+              return (
+                <FeedCard cardData={card}/>
+              )
+            })
+
+            : <></>
+        }
       </FeedGallery>
     </Wrapper>
   );

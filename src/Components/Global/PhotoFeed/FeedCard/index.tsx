@@ -1,12 +1,12 @@
 import { useModal } from '../../../../Context/useModal'
 import {Wrapper, Image} from './styles'
 
-export default function FeedCard(){
+export default function FeedCard({cardData}: IFeedCardProps){
     const {modalController} = useModal()
 
     return (
-        <Wrapper onClick={modalController.toggleModal}>
-            <Image src="images/feed/cat1.jpg"/>
+        <Wrapper onClick={modalController.toggleModal} id={cardData.id}>
+            <Image src={cardData.photo}/>
         </Wrapper>
     )
 }
