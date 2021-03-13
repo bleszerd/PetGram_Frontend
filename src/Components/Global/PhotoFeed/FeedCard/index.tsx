@@ -7,8 +7,8 @@ export default function FeedCard({card}: FeedCardProps){
     const { opened, modalController } = useModal()
 
     function handleModalStateAction(){
-        modalController.toggleModal()
         modalController.handleId(card.id)
+        modalController.toggleModal()
     }
 
     return (

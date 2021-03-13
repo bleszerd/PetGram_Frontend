@@ -14,3 +14,11 @@ interface IPost {
     _id?: string
     id: string
 }
+
+interface IProfile {
+    activity: string
+    followers: string
+    name: string
+    photo: string
+    username: string
+}

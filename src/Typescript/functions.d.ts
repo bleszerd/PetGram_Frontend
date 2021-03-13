@@ -6,3 +6,7 @@ interface IGetFeedFromUserParams {
 interface IGetPostByIdParams {
     id: string
 }
+
+interface IFindUserByUsernameParams {
+    username: string
+}

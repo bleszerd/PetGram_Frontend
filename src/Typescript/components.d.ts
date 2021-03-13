@@ -9,7 +9,6 @@ interface IFeedViewProps {
     data: IFeedCard[]
 }
 
-
 interface IFeedCard {
     comments: [any]
     date: string
@@ -24,4 +23,12 @@ interface IFeedCard {
 
 interface FeedCardProps {
     card: IFeedCard
+}
+
+interface ICommentCardProps {
+    comment: {
+        mentionedUser: string
+        text: string
+        _id: string
+    }
 }

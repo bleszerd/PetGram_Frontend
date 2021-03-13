@@ -112,3 +112,10 @@ export const CloseModalButton = styled.button`
     outline: none;
     color: ${({theme}) => theme.colors.textLigth};
 `
+
+export const Loading = styled.div`
+    width: 170vw;
+    height: 100%;
+    background: black;
+    border-radius: .5rem 0 0 .5rem;
+`
