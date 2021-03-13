@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import { Wrapper } from './styles'
 
 export default function GlobalNavbar() {
-    const { opened, navbarController } = useNavbar()
+    const { opened } = useNavbar()
 
     return (
         <Wrapper opened={opened}>

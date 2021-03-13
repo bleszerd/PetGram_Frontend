@@ -1,6 +1,6 @@
 import { useModal } from '../../../../Context/useModal'
 import CommentCard from '../CommentCard'
-import { CardDetailsSection, CardImage, Modal, Wrapper, ProfileSection, Name, NameUsernameContainer, ProfilePicture, Username, CardText, CommentsSection, CloseModalButton, BackgroundEffect, Loading } from './styles'
+import { CardDetailsSection, CardImage, Modal, Wrapper, ProfileSection, Name, NameUsernameContainer, ProfilePicture, Username, CardText, CommentsSection, CloseModalButton, BackgroundEffect } from './styles'
 
 export default function CardModal() {
     const { opened, modalController } = useModal()

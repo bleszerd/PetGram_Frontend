@@ -21,22 +21,6 @@ interface IFeedCard {
     id: string
 }
 
-interface FeedCardProps {
-    card: IFeedCard
-}
-
-interface ICommentCardProps {
-    comment: {
-        mentionedUser: string
-        text: string
-        _id: string
-    }
-}
-
-
-
-
-
 interface IGlobalProfileNavigatorProps {
     userData: IUserData
 }

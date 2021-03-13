@@ -1,4 +1,4 @@
-import { IFeedCard, IFeedViewProps, IPhotoFeedProps } from "../../../../Typescript/components";
+import { IPhotoFeedProps } from "../../../../Typescript/components";
 import FeedCard from "../FeedCard";
 import { FeedGallery, Wrapper } from "./styles";
 
