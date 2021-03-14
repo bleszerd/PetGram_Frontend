@@ -16,9 +16,13 @@ const requests = {
     async findTimelineByUsername({username}: IFindTimelineByUsername){
         const response = await API.get(`/timeline/${username}`)
 
-        console.log(response.data.response);
-
         return response.data.response
+    },
+
+    async findPostById({id}: IFindPostById){
+        const response = await API.get(`/posts/${id}`)
+
+        return response.data.response.posts
     }
 }
 

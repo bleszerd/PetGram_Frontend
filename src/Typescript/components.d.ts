@@ -32,4 +32,13 @@ interface IProfileContentProps {
 
 interface IPhotoFeedProps {
     timelineData: IUserTimeline[]
+    user?: IUserProfile
+}
+
+interface ICardModalProps {
+    profileData?: IUserProfile
+}
+
+interface ICommentCardProps {
+    comment: any
 }

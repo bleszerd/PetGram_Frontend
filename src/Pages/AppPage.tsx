@@ -53,14 +53,13 @@ export default function AppPage() {
     return (
         <>
             <AppContainer>
-                <CardModal />
                 <GlobalNavbar />
                 <Container>
                     <GlobalProfileNavigator userData={userData} />
                 </Container>
                 <Container>
                     <HeaderBar />
-                    <PhotoFeed timelineData={userData.timeline}/>
+                    <PhotoFeed timelineData={userData.timeline} user={userData.user}/>
                 </Container>
             </AppContainer>
         </>

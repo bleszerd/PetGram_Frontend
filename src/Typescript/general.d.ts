@@ -48,3 +48,9 @@ interface IUserTimeline {
 interface IFeedCardProps {
     cardData: IUserTimeline
 }
+
+interface IComment {
+    mentionedUser: string
+    text: string
+    _id: string
+}

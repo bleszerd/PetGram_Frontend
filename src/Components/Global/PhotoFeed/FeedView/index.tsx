@@ -3,8 +3,6 @@ import FeedCard from "../FeedCard";
 import { FeedGallery, Wrapper } from "./styles";
 
 export default function FeedView({ timelineData }: IPhotoFeedProps) {
-  console.log(timelineData)
-
   return (
     <Wrapper>
       <FeedGallery>

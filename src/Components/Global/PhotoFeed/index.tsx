@@ -3,12 +3,13 @@ import { Wrapper } from "./styles";
 import CardModal from "./CardModal";
 import { IPhotoFeedProps } from "../../../Typescript/components";
 
-export default function PhotoFeed({timelineData}: IPhotoFeedProps) {
+export default function PhotoFeed({ timelineData, user }: IPhotoFeedProps) {
+  console.log(user);
   return (
     <>
-      <CardModal />
+      <CardModal profileData={user}/>
       <Wrapper>
-        <FeedView timelineData={timelineData}/>
+        <FeedView timelineData={timelineData} />
       </Wrapper>
     </>
   );

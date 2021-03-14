@@ -1,12 +1,4 @@
 //========== REQUESTS ===========
-interface IGetFeedFromUserParams {
-    username: string
-}
-
-interface IGetPostByIdParams {
-    id: string
-}
-
 interface IFindUserByUsernameParams {
     username: string
 }
@@ -17,4 +9,8 @@ interface IFindFollowersByUsername {
 
 interface IFindTimelineByUsername {
     username: string
+}
+
+interface IFindPostById {
+    id: string
 }
